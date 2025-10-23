@@ -19,12 +19,15 @@ int main() {
             }
         }
     }
-    
+
     cout << "Array ordinato: ";
     for (int i = 0; i < 10; i++) {
         cout << numeri[i] << " ";
     }
     cout << endl;
+
+    cout << "Numero massimo: " << numeri[0] << endl;
+    cout << "Numero minimo: " << numeri[9] << endl;
 
     return 0;
 }
