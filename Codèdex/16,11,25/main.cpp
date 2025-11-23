@@ -151,7 +151,7 @@ void puntatori() {
 
     int* empty_pointer = nullptr; // puntatore vuoto
 
-    int& ref_eta = eta; // riferimento alla variabile eta
+    int& ref_eta = eta; // riferimento alla variabile età
 
 }
 
