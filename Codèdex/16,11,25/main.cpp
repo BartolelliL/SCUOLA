@@ -100,6 +100,61 @@ int celsius(const double t) {
     return Acelsius;
 }
 
+class Student {
+// le classi sono dei blueprint per creare tanti oggetti con le stesse proprietà e funzioni
+private:
+
+    int year{};
+    int ore_PCTO{};
+
+public:
+
+    string name;
+
+    Student(string name, int year, int ore_PCTO) {
+        name = name;
+        year = year;
+        ore_PCTO = ore_PCTO;
+    }
+
+    void display_student_info() {
+
+        // le funzioni dentro le classi sono chiamate metodi
+        // METHODS
+
+        if (name.empty()) {
+            name = "UNKNOWN";
+        }
+
+        if (year <= 0 or year > 5 or year == NULL) {
+            year = 1;
+        }
+
+        if (ore_PCTO < 0 or ore_PCTO == NULL) {
+            ore_PCTO = 0;
+        }
+
+        cout << "Name: " << name << endl;
+        cout << "Year: " << year << endl;
+        cout << "Ore PCTO: " << ore_PCTO << endl;
+    }
+
+};
+
+void puntatori() {
+
+    int eta = 18;
+    int* p_eta = &eta; // il simbolo & prende l'indirizzo
+
+    cout << p_eta << endl;
+    cout << *p_eta << endl; // l'asterisco prende il valore all'indirizzo
+
+    int* empty_pointer = nullptr; // puntatore vuoto
+
+    int& ref_eta = eta; // riferimento alla variabile età
+
+}
+
 int main() {
 
     // temperatura(69);
@@ -111,6 +166,11 @@ int main() {
     // vettori_3();
     // vettori_4();
     // celsius(69);
+
+    // Student mario("Mario Rossi", 3, 120);
+    // mario.display_student_info();
+
+    puntatori();
 
     return 0;
 
