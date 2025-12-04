@@ -1,13 +1,3 @@
-/*
-Scrivi in c++ un programma che,
-acquisita l'età di un individuo, sapendo che
-dai 14 anni sì può guidare lo scooter con
-cilindrata di 50cc, dai 16 anni la moto fino a 125cc,
-dai 18 anni l'auto fino a 95cc e dai 21 qualsiasi auto
-o moto senza limitazioni, restituisca l'elenco dei mezzi che
-l'individuo può guidare.
-*/
-
 #include <iostream>
 using namespace std;
 
