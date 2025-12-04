@@ -1,0 +1,36 @@
+
+{
+
+    "configurations": [
+
+        {
+
+            "name": "Win32",
+
+            "includePath": [
+
+                "${workspaceFolder}/**",
+
+                "C:/path/to/your/compiler/include/c++/v1",
+
+                "C:/path/to/your/compiler/include"
+
+            ],
+
+            "defines": [],
+
+            "compilerPath": "C:/path/to/your/compiler/bin/g++.exe",
+
+            "cStandard": "c11",
+
+            "cppStandard": "c++17",
+
+            "intelliSenseMode": "windows-msvc-x64"
+
+        }
+
+    ],
+
+    "version": 4
+
+}
