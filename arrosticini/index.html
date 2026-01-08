@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cucina Abruzzese</title>
+    <style>
+    .roboto-font {
+        font-family: "Roboto", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 300;
+        font-style: normal;
+        font-variation-settings:
+            "wdth" 100;
+        }
+
+    .row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .left-img {
+        max-width: 40%;
+        height: auto;
+    }
+
+    .right-text {
+        max-width: 55%;
+        text-align: justify;
+    }
+
+    .body {
+        margin: 20px;
+    }
+
+    .button-2 {
+  background-color: rgba(51, 51, 51, 0.05);
+  border-radius: 8px;
+  border-width: 0;
+  color: #333333;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 10px 12px;
+  text-align: center;
+  transition: all 200ms;
+  vertical-align: baseline;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+    }
+    </style>
+</head>
+<body>
+
+    <h1 style="text-align: center; font-size: 50px;">Cucina tipica Abruzzese</h1>
+
+    <div class="row" style="margin: 100px;">
+        <img src="https://www.finedininglovers.it/sites/default/files/styles/1_1_768x768/public/article_content_images/piatti%20tipici%20abruzzesi%20-%20Finedininglovers.jpg.webp?itok=sYLj3GJ7" alt="Arrosticini" class="left-img" width="500px">
+        <div class="right-text">
+            <p style="font-size: 30px;">La cucina tipica abruzzese fonda le sue radici nella gastronomia contadina. I piatti tradizionali abruzzesi sono molto semplici e fatti di sapori autentici principalmente di terra. <br><br>In questo sito potrete esplorare le prelibatezze di questa terra e le loro ricette.</p>
+            <a href="ricette.html"><button class="button-2" role="button">Ricette</button></a>
+        </div>
+        
+    </div>
+
+    <div style="margin-left: 20px;">
+        <div class="listbox-container">
+            <label for="regioni">Seleziona una regione d'Italia:</label>
+            <select id="regioni" name="regioni">
+                <option value="abruzzo">Abruzzo</option>
+            </select>
+        </div>
+    
+        <div class="list-container">
+            <h2>Fonti e Collegamenti Utili</h2>
+            <ul>
+                <li><a href="https://www.finedininglovers.it" target="_blank">Fine Dining Lovers</a></li>
+                <li><a href="https://www.visititaly.it" target="_blank">Visit Italy</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div style="margin: 20px;">
+        <h2>Lascia il tuo feedback</h2>
+        <form>
+            <fieldset>
+                <legend>Voto complessivo:</legend>
+                <label>
+                    <input type="radio" name="voto" value="ottimo" required> Ottimo
+                </label><br>
+                <label>
+                    <input type="radio" name="voto" value="buono"> Buono
+                </label><br>
+                <label>
+                    <input type="radio" name="voto" value="sufficiente"> Sufficiente
+                </label>
+            </fieldset>
+    
+            <label for="commento">Commento:</label><br>
+            <input type="text" id="commento" name="commento" placeholder="Scrivi il tuo commento qui..." style="width: 100%; padding: 10px; margin-top: 10px; margin-bottom: 20px;" required>
+    
+            <input type="submit" value="Invia Feedback" style="padding: 10px 20px; font-size: 16px; cursor: pointer;">
+        </form>
+    </div>
+
+</body>
+</html>
