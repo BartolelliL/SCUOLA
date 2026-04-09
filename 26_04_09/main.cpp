@@ -33,7 +33,7 @@ int append_to_rubbrica() {
 
     string append_to_rubbrica_q;
 
-    cout << "Desideri aggiungere un contatto alla tua Rubrica? [Y] per sì, [N] per no; [S] per stampare la Rubrica.";
+    cout << "Desideri aggiungere un contatto alla tua Rubrica? [Y] per sì, [N] per no; [S] per stampare la Rubrica: ";
     cin >> append_to_rubbrica_q;
 
     string nome_new_contact;
@@ -69,7 +69,7 @@ int append_to_rubbrica() {
     }
 
     return 0;
-    
+
 }
 
 int main() {
