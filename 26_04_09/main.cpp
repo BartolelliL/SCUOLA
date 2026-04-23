@@ -1,25 +1,26 @@
 #include <iostream>
-#include <string>
-#include <vector>
+#include <cstring>
+const int MAX_CONTATTI = 100;
 
 using namespace std;
 
 struct Contatto {
-    string nome;
-    string cognome;
+    char nome[50];
+    char cognome[50];
     long long numero;
 };
 
-vector<Contatto> Rubrica = {
+Contatto Rubrica[MAX_CONTATTI] = {
     {"Luciana", "Littizzetto", 38743192784LL},
     {"Bob", "Dylan", 18648219743LL},
     {"Umberto", "Sordi", 184790289471LL}
 };
+int contatti_attualmente_inseriti = 3;
 
 void ordinamento_rubbrica() {
-    for (int i = 0; i < Rubrica.size() - 1; i++) {
-        for (int j = 0; j < Rubrica.size() - i - 1; j++) {
-            if (Rubrica[j].cognome > Rubrica[j + 1].cognome) {
+    for (int i = 0; i < contatti_attualmente_inseriti - 1; i++) {
+        for (int j = 0; j < contatti_attualmente_inseriti - i - 1; j++) {
+            if (strcmp(Rubrica[j].cognome, Rubrica[j + 1].cognome) > 0) {
                 Contatto temp = Rubrica[j];
                 Rubrica[j] = Rubrica[j + 1];
                 Rubrica[j + 1] = temp;
@@ -31,13 +32,13 @@ void ordinamento_rubbrica() {
 
 int append_to_rubbrica() {
 
-    string append_to_rubbrica_q;
+    char *append_to_rubbrica_q;
 
     cout << "Desideri aggiungere un contatto alla tua Rubrica? [Y] per sì, [N] per no; [S] per stampare la Rubrica: ";
     cin >> append_to_rubbrica_q;
 
-    string nome_new_contact;
-    string cognome_new_contact;
+    char nome_new_contact[50];
+    char cognome_new_contact[50];
     long long num_new_contact;
 
     if (append_to_rubbrica_q != "Y" and append_to_rubbrica_q != "N" and append_to_rubbrica_q != "S") {
